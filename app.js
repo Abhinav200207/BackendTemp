@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser');
 const ejs = require("ejs");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.use(express.json());
 const hospitalRouter = require('./router/router');
 
